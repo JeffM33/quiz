@@ -1,8 +1,10 @@
 var timerEl = document.getElementById('countdown');
+var startQuizEl = document.querySelector("#startStop");
+var resetQuizEl = document.querySelector("#reset");
+var timeLeft = 0;
 
 // Timer countdown Function
-function countdown() {
-    var timeLeft = 90; 
+function countdown(timeLeft) { 
 
     var timeInterval = setInterval(function () {
       if (timeLeft > 1) {
@@ -19,8 +21,19 @@ function countdown() {
   }
 
 
-//Calling countdown function on page to start when page is loaded  
-countdown();
+//Calling start button adding event listener to start countdown on timer.  
+startQuizEl.addEventListener("click", function(){
+    timeLeft = 90
+    countdown(timeLeft);
+
+})
+
+
+resetQuizEl.addEventListener("click", function(){
+    timeLeft = 0
+    countdown(timeLeft);
+
+})
 
 // Need to make a correct/ incorrect score
 // Need to store local high scores
