@@ -28,7 +28,7 @@ startQuizEl.addEventListener("click", function(){
 
 })
 
-
+//calling reset button to set time to 0 and stop the quiz.
 resetQuizEl.addEventListener("click", function(){
     timeLeft = 0
     countdown(timeLeft);

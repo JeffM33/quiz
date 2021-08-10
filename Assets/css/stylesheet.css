@@ -12,12 +12,13 @@
 }
 header{
     background-color: var(--bud-green);
+    color: var(--unbleached-silk);
 }
 
 .container{
     height: 300px;
-    width: 100%;
-    background-color: var(--unbleached-silk);  
+    width: auto;
+
 
 }
 
@@ -29,19 +30,20 @@ nav{
 
 #display{
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: right;
-    width: 10%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
     font-size: 15px;
     margin: 0px auto;
 }
 
 .buttons{
     display: flex;
-    justify-self: center;
-    -ms-flex-align: center;
+    justify-content: center;
 }
 
 footer{
+    color: var(--unbleached-silk);
     background-color: var(--bud-green);
+    text-align: center;
 }
