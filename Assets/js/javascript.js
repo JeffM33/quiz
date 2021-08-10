@@ -2,6 +2,17 @@ var timerEl = document.getElementById('countdown');
 var startQuizEl = document.querySelector("#startStop");
 var resetQuizEl = document.querySelector("#reset");
 var timeLeft = 0;
+var questions = [
+    {
+        prompt: "How do you turn on a computer?\n(a) Hit the power Button\n\ (b) Pour water on it\n (c) pull the plug out of the wall",
+        answer: "a"
+    },
+    {
+        prompt: "How do you turn on a computer?\n(a) Hit the power Button\n\ (b) Pour water on it\n (c) pull the plug out of the wall",
+        answer: "a"
+    }
+];
+var score = 0;
 
 // Timer countdown Function
 function countdown(timeLeft) { 
@@ -25,7 +36,7 @@ function countdown(timeLeft) {
 startQuizEl.addEventListener("click", function(){
     timeLeft = 90
     countdown(timeLeft);
-
+    startGame();
 })
 
 //calling reset button to set time to 0 and stop the quiz.
@@ -34,6 +45,30 @@ resetQuizEl.addEventListener("click", function(){
     countdown(timeLeft);
 
 })
+
+
+//Making a for loop to watch the questions, and make sure we don't run out
+function startGame(){
+for(var i = 0; i < questions.length; i++){
+    // making if statement to watch for time element
+    if(timeLeft > 0){
+        var response = window.prompt(questions[i].prompt)
+        if(response === questions[i].answer){
+            score++;
+            alert("Correct!");
+        } else {
+            alert("Wrong");
+        }
+        
+    } else {
+
+    }
+
+    
+}
+alert("Out of " + questions.length + " you got " + score + " right!");
+
+}
 
 // Need to make a correct/ incorrect score
 // Need to store local high scores
