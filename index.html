@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Albion Quiz</title>
+
+    <link rel="stylesheet" href="./Assets/css/stylesheet.css">
 </head>
 <body class="#container">
-    <nav class="navbar navbar-light bg-faded">
-        <a class="navbar-brand" href="#">High Score</a>
-        <!-- Need to fix the class to align text to right side and add a object to display the time -->
-        <a class="text-right" href="#">Timer</a>
-    </nav>
-    
+    <header>      
+            <nav class="navbar navbar-light bg-faded">
+                <a class="navbar-brand" href="#">High Score</a>
+                <!-- Need to fix the class to align text to right side and add a object to display the time -->
+                <a id="display" href="#">Timer : <span id="countdown"></span></a>
+            </nav>
+    </header>
+    <main>
+        <div class="buttons">
+            <button id="startStop">Start</button>
+            <button id="reset">Reset</button>
+
+        </div>
+
+    </main>
+    <footer>
+        <p>FRICKS ARE RECUITING!</p>
+    </footer>
+    <script src="assets/js/javascript.js"></script>
 </body>
 </html>
