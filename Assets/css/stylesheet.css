@@ -1,0 +1,17 @@
+/* Need to created or borrow bootstrap css 
+    I want to make easy flex boxes for the answers 
+    need to round off symmetry for each box
+    
+     */
+     /* CSS HEX */
+:root{
+    --blue-gray: #6699ccff;
+    --russian-violet: #420039ff;
+    --bud-green: #70ae6eff;
+    --rifle-green: #4a5240ff;
+    --unbleached-silk: #ffddd2ff;
+}
+
+.container{
+  background-color: var(--unbleached-silk);  
+}

@@ -20,4 +20,5 @@ For CSS to style it properly I created the listed below
 Need to created or borrow bootstrap css. I want to make easy flex boxes for the answers need to round off symmetric corners for each box.
 
 HTML I need to create a nav bar for a link to high scores. I also need to include a time left in this as well. For the main body text i need to have replaceable objects that are called upon in Javascript to change out the different verbiage, text etc. 
-   
+
+If you like what was done in this project please feel free to contact me for work!
